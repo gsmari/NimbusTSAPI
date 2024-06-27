@@ -1,7 +1,7 @@
 
 # NimbusTSAPI
 
-NimbusTSAPI is a python3 package used for creating a graphql query against NimbusTSAPI web service.
+NimbusTSAPI is a python3 package used for creating GraphQL queries which are then passed to NimbusTSAPI web service.
 For ease of access of Time Series data against the Nimbus system.
 
 
