@@ -7,7 +7,7 @@ class NimbusTSAPI:
     def __init__(
             self,
             url,
-            verify=False
+            verify=True
         ):
         self.url = url
         self.verify = verify
@@ -32,8 +32,8 @@ class NimbusTSAPI:
         return """
         { 
             tss(
-            tscodes:[\"""" + "\",\"".join(tscodes) + """\"], 
-            datetimefrom: \"""" + datetimefrom.strftime("%Y-%m-%d %H:%M:%S") + """\",
+            tscodes:[\"""" + "\",\"".join(tscodes) + """\"] 
+            datetimefrom: \"""" + datetimefrom.strftime("%Y-%m-%d %H:%M:%S") + """\"
             datetimeto: \"""" + datetimeto.strftime("%Y-%m-%d %H:%M:%S") + """\")
             {
                 name
